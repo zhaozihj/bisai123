@@ -69,19 +69,17 @@
         >
           <template slot-scope="scope">
             <el-button
-              type="text"
-              size="small"
-              class="blueBug"
+                    type="primary"
+                    icon="el-icon-edit"
               @click="editHandle(scope.row)"
-            >
+            circle>
               修改
             </el-button>
             <el-button
-              type="text"
-              size="small"
-              class="delBut non"
+                    type="primary"
+                    icon="el-icon-delete"
               @click="deleteHandle(scope.row.id)"
-            >
+            circle>
               删除
             </el-button>
           </template>

@@ -29,13 +29,12 @@
           ></i>
         </el-input>
         <div class="tableLab">
-          <span class="span-btn delBut non" @click="deleteHandle('批量')">批量删除</span>
-          <span class="span-btn blueBug non" @click="statusHandle('1')">批量启售</span>
-          <span
-            style="border:none;"
-            class="span-btn delBut non"
+          <el-button type="primary" @click="deleteHandle('批量')" circle>批量删除</el-button>
+          <el-button type="primary" @click="statusHandle('1')" circle>批量启售</el-button>
+          <el-button
+                  type="primary"
             @click="statusHandle('0')"
-          >批量停售</span>
+          circle>批量停售</el-button>
           <el-button
             type="primary"
             @click="addSetMeal('add')"
